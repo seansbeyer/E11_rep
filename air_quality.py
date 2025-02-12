@@ -14,7 +14,7 @@ uart = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=0.25)
 pm25 = PM25_UART(uart, reset_pin=None)
 
 # File name with timestamp
-filename = f"pm25_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+filename = "air_data.csv"
 
 # Open the CSV file for writing
 with open(filename, mode="w", newline="") as file:
