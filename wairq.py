@@ -61,7 +61,7 @@ with open(filename, mode="w", newline="") as file:
                      "Particles >0.3um", "Particles >0.5um", "Particles >1.0um",
                      "Particles >2.5um", "Particles >5.0um", "Particles >10um", "Temperature: %0.1f C" , "Gas: %d ohm", "Humidity: %0.1f %%", "Pressure: %0.3f hPa", "Altitude = %0.2f meters"])
 
-    print(f"Logging PM2.5 sensor data to {filename} for 30 seconds...\n")
+    print(f"Logging PM2.5 sensor data to {filename} for {run_time} seconds...\n")
 
     start_time = time.time()
     elapsed_time = 0
