@@ -1,5 +1,5 @@
 import sys
-import tinme
+import time
 
 print(sys.argv)
 if len(sys.argv) < 2:
